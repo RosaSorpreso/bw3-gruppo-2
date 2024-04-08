@@ -18,10 +18,6 @@ export class UserService {
   $users = this.userSubj.asObservable()
 
   constructor(private http:HttpClient) {
-    this.getAllUsers().subscribe(data => {
-      this.userSubj.next(data)
-      this.users = data
-    })
   }
 
   getAllUsers(){
