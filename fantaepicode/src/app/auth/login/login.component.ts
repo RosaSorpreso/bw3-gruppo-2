@@ -6,23 +6,24 @@ import { iLogin } from '../../models/login';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  login:iLogin = {
+  login: iLogin = {
     email: '',
     password: ''
   }
 
   constructor(
-    private authSvc:AuthService,
-    private router:Router
-    ){}
-
-    signIn(){
-      this.authSvc.login(this.login)
+    private authSvc: AuthService,
+    private router: Router
+  ) { }
+  
+  signIn() {
+    this.authSvc.login(this.login)
       .subscribe(data => {
-        this.router.navigate(['/homepage'])
-      })
-    }
+        this.router.navigate(['/homepage']);
+        console.log(this.login);  // spostato all'interno della callback
+      });
+  }
 }

@@ -16,7 +16,7 @@ export class AuthGuard {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
       if(!this.authSvc.syncIsLoggedIn){
-        this.router.navigate(['/login'])
+        this.router.navigate(['/register'])
       }
 
       return this.authSvc.syncIsLoggedIn

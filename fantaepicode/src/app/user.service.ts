@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { Subject } from 'rxjs';
 import { environment } from '../environments/environment.development';
 import { iUser } from './models/user';
 
@@ -9,18 +9,14 @@ import { iUser } from './models/user';
 })
 export class UserService {
 
-  userUrl = environment.usersUrl
+  private user = new Subject<iUser[]>()
 
-  users: iUser[] = []
+  users$ = this.user.asObservable()
 
-  userSubj = new BehaviorSubject<iUser[]>([])
-
-  $users = this.userSubj.asObservable()
-
-  constructor(private http:HttpClient) {
-  }
+  constructor(private http:HttpClient) {}
 
   getAllUsers(){
-    return this.http.get<iUser[]>(this.userUrl)
+    return this.http.get<iUser[]>(environment.usersUrl)
+    .subscribe(users => this.user.next(users))
   }
 }

@@ -20,7 +20,7 @@ export class AuthService {
 
   jwtHelper:JwtHelperService = new JwtHelperService()
 
-  authSubj = new BehaviorSubject<iUser | null>(null)
+  authSubj = new BehaviorSubject<iUser|null>(null)
 
   user$ = this.authSubj.asObservable()
   isLoggedIn$ = this.user$.pipe(
@@ -33,7 +33,6 @@ export class AuthService {
   constructor(
     private http:HttpClient,
     private router:Router,
-    private userSvc: UserService
     ) {
       this.restoreUser()
     }
@@ -41,12 +40,9 @@ export class AuthService {
   registerUrl:string = environment.registerUrl
   loginUrl:string = environment.loginUrl
 
-  register(newUser:Partial<iUser>):Observable<AccessData> {
-    return this.http.post<AccessData>(this.registerUrl,newUser)
-    .pipe(tap(() => {
-      this.userSvc.getAllUsers().subscribe(users => this.userSvc.userSubj.next(users))
-    }))
-  }
+  register(newUser:Partial<iUser>):Observable<AccessData>{
+    return this.http.post<AccessData>(this.registerUrl, newUser)
+    }
 
   login(loginData:iLogin):Observable<AccessData> {
     return this.http.post<AccessData>(this.loginUrl,loginData)
@@ -60,28 +56,29 @@ export class AuthService {
   logout(){
     this.authSubj.next(null)
     localStorage.removeItem('accessData')
-    this.router.navigate(['/login'])
+    this.router.navigate(['/auth/login'])
   }
 
   getAccessToken():string{
     const userJson = localStorage.getItem('accessData')
-    if(!userJson) return '';
+    if(!userJson) return ''
     const accessData:AccessData = JSON.parse(userJson)
     if(this.jwtHelper.isTokenExpired(accessData.token)) return '';
     return accessData.token
   }
 
-  autoLogout(jwt:string) {
-    const expDate = this.jwtHelper.getTokenExpirationDate(jwt) as Date;
-    if (!expDate) {
-      console.error('Token expiration date is null.');
-      return;
+  autoLogout(jwt: string): void {
+    const expirationDate = this.jwtHelper.getTokenExpirationDate(jwt);
+    
+    if (expirationDate) {
+      const expiresInMs = expirationDate.getTime() - new Date().getTime();
+      
+      setTimeout(() => {
+        this.logout();
+      }, expiresInMs);
     }
-    const expMs = expDate.getTime() - new Date().getTime();
-    setTimeout(() => {
-      this.logout();
-    }, expMs);
   }
+  
 
   restoreUser(){
     const userJson = localStorage.getItem('accessData')
@@ -90,5 +87,24 @@ export class AuthService {
     if(this.jwtHelper.isTokenExpired(accessData.token)) return;
     this.authSubj.next(accessData.user)
     this.autoLogout(accessData.token)
+  }
+  errors(err: any) {
+    switch (err.error) {
+        case "Email and Password are required":
+            return new Error('Email e password obbligatorie');
+            break;
+        case "Email already exists":
+            return new Error('Utente esistente');
+            break;
+        case 'Email format is invalid':
+            return new Error('Email scritta male');
+            break;
+        case 'Cannot find user':
+            return new Error('utente inesistente');
+            break;
+            default:
+        return new Error('Errore');
+            break;
+    }
   }
 }
