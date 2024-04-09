@@ -13,10 +13,27 @@ export class PlayersComponent {
 
   constructor(private playerSvc: PlayersService,){}
 
-  ngOnInit(){
-    this.playerSvc.$player.subscribe(player => {
-      this.players = player
-    })
+  ngOnInit() {
+    this.playerSvc.getAllPlayers().subscribe(player => {
+      this.players = player;
+    });
+
+    this.playerSvc.player$.subscribe(
+      player => {
+        this.players = player;
+      });
   }
+
+  addToFavs(prd:iPlayer) {
+    this.playerSvc.addToFav(prd)
+  }
+
+  isFav(id:number) {
+    return this.playerSvc.isFav(id)
+  }
+
+  // deleteMovie(id: number) {
+  //   this.playerSvc.deleteMovie(id);
+  // }
 
 }

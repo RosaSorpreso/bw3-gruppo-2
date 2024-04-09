@@ -1,7 +1,6 @@
 <div class="container mt-5 pt-3">
   <h1 class="text-center text-white">Scegli i tuoi Developers:</h1>
   <div class="row">
-    <div class="row">
       <div class="col-12 col-sm-6 col-md-3" *ngFor="let p of players">
       <div class="nft" >
           <div class='main'>
@@ -23,12 +22,12 @@
                       <p class="mb-0">{{p.price}} ₪</p>
                   </div>
                   <div class="duration">
-                      <button class="btn btn-primary btn-sm">Compra</button>
+                      <button (click)="addToFavs(p)" [disabled]="isFav(p.id)"
+                      class="btn btn-primary btn-sm">Compra</button>
                   </div>
               </div>
           </div>
       </div>
   </div>
-      </div>
   </div>
 </div>

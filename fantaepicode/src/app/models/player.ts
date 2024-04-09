@@ -5,5 +5,6 @@ export interface iPlayer {
   price: number,
   role: string,
   strenght: number,
-  image: string
+  image: string,
+  id: number
 }

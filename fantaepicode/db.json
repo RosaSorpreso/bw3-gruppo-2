@@ -44,7 +44,8 @@
       "price": 100,
       "role": "il presidente",
       "strenght": 8,
-      "image" : "dario.jpeg"
+      "image" : "dario.jpeg",
+      "id": 1
     },
     {
       "firstName": "Sara",
@@ -53,7 +54,8 @@
       "price": 75,
       "role": "la dorce",
       "strenght": 6,
-      "image" : "sara.jpg"
+      "image" : "sara.jpg",
+      "id": 2
     },
     {
       "firstName": "Alessandro",
@@ -62,7 +64,8 @@
       "price": 90,
       "role": "mr countdown",
       "strenght": 8.5,
-      "image" : "ale.jpeg"
+      "image" : "ale.jpeg",
+      "id": 3
     }
   ]
 }
