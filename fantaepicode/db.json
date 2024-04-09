@@ -36,5 +36,33 @@
       "id": 5
     }
   ],
-  "players": []
+  "players": [
+    {
+      "firstName": "Dario",
+      "lastName": "Cantini",
+      "skills": ["sbagliare le dosi del sale nella pasta", "contare i semini delle fragole", "importunare anziane nelle sale bingo"],
+      "price": 100,
+      "role": "il presidente",
+      "strenght": 8,
+      "image" : "./src/assets/img/profile/dario.jpeg"
+    },
+    {
+      "firstName": "Sara",
+      "lastName": "Porricino",
+      "skills": ["dorce spammer", "krunker addicted", "è dar pc de n'artro"],
+      "price": 75,
+      "role": "la dorce",
+      "strenght": 6,
+      "image" : "./src/assets/img/profile/sara.jpg"
+    },
+    {
+      "firstName": "Alessandro",
+      "lastName": "Mazzocchi",
+      "skills": ["Nascondere la pelata", "riflettere sotto il sole", "contare all'indietro"],
+      "price": 90,
+      "role": "mr countdown",
+      "strenght": 8.5,
+      "image" : "./src/assets/img/profile/ale.jpeg"
+    }
+  ]
 }

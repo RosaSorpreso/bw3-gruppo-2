@@ -3,6 +3,7 @@ export interface iUser {
   firstName: string,
   lastName: string
   email: string,
+  sordi?: number,
   password?: string,
   admin?: boolean
 }

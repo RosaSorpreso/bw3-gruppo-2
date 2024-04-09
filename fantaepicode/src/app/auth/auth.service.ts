@@ -24,10 +24,10 @@ export class AuthService {
   user$ = this.authSubj.asObservable()
   isLoggedIn$ = this.user$.pipe(
     map(user => !!user),
-    tap(user =>  this.syncIsLoggedIn = user)
+    //tap(user =>  this.syncIsLoggedIn = user)
     )
 
-  syncIsLoggedIn:boolean = false;
+  //syncIsLoggedIn:boolean = false;
 
   constructor(
     private http:HttpClient,
