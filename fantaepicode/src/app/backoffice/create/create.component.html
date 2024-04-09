@@ -1,16 +1,41 @@
-<div class="container my-5">
-  <div class="mb-3">
-    <p class="display-6 fw-bold">Add new player</p>
-  </div>
-  <div class="d-flex flex-column gap-3 w-50">
-    <div class="d-flex flex-column gap-3">
-      <input [(ngModel)]="newPlayer.firstName" placeholder="Nome">
-      <input [(ngModel)]="newPlayer.lastName" placeholder="Cognome">
-      <input [(ngModel)]="newPlayer.role" placeholder="Ruolo">
-      <input [(ngModel)]="newPlayer.strenght" type="number" min="1" max="10" placeholder="forza">
-      <input [(ngModel)]="newPlayer.skills" placeholder="Skills">
-      <input [(ngModel)]="newPlayer.price" placeholder="prezzo">
-    </div>
-    <button class="btn btn-success btn-sm" (click)="addPlayer()">Aggiungi Player</button>
+<div class="container my-5 pt-3">
+  <h1 class="text-white text-center">Create a new Player!</h1>
+  <div class="d-flex flex-column gap-3 w-50 container mt-4">
+    <form class="p-4 p-md-5 rounded-3 alert alert-primary" data-np-autofill-form-type="register" data-np-checked="1" data-np-watching="1">
+      <div class="d-flex flex-column gap-2">
+        <div class="form-floating mb-5">
+          <input [(ngModel)]="newPlayer.firstName" placeholder="Nome" id="floatingName"
+          class="form-control border border-primary">
+          <label class="" for="floatingName">Nome:</label>
+        </div>
+
+        <label class="text-white" for="name">Nome:</label>
+        <input [(ngModel)]="newPlayer.lastName" placeholder="Cognome"
+        class="form form-control border border-primary">
+
+        <label class="text-white" for="role">Ruolo:</label>
+        <input [(ngModel)]="newPlayer.role" placeholder="Ruolo" id="role"
+        class="form form-control border border-primary">
+
+        <label class="text-white" for="strenght">Forza:</label>
+        <input [(ngModel)]="newPlayer.strenght" type="number" min="0" max="10" placeholder="forza"
+        class="form form-control border border-primary" id="strenght">
+
+        <label class="text-white" for="skill">Skills:</label>
+        <input [(ngModel)]="newPlayer.skills[0]" placeholder="Skills" id="skill"
+        class="form form-control border border-primary">
+
+        <input [(ngModel)]="newPlayer.skills[1]" placeholder="Skills"
+        class="form form-control border border-primary">
+
+        <input [(ngModel)]="newPlayer.skills[2]" placeholder="Skills"
+        class="form form-control border border-primary">
+
+        <label class="text-white" for="price">Prezzo:</label>
+        <input [(ngModel)]="newPlayer.price" placeholder="prezzo" id="price"
+        class="form form-control border border-primary">
+      </div>
+      <button class="btn btn-primary btn-sm" (click)="addPlayer()">Aggiungi Player</button>
+    </form>
   </div>
 </div>
