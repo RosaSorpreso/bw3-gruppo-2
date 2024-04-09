@@ -18,7 +18,7 @@ export class PlayersComponent {
       this.players = player;
     });
 
-    this.playerSvc.player$.subscribe(
+    this.playerSvc.players$.subscribe(
       player => {
         this.players = player;
       });
@@ -32,8 +32,8 @@ export class PlayersComponent {
     return this.playerSvc.isFav(id)
   }
 
-  // deleteMovie(id: number) {
-  //   this.playerSvc.deleteMovie(id);
-  // }
+  deleteMovie(id: number) {
+    this.playerSvc.deletePlayer(id);
+  }
 
 }

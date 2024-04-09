@@ -20,27 +20,19 @@ export class PlayersService {
 
     fav: iPlayer[] = [];
 
-  private playerSubject = new Subject<iPlayer[]>();
-  player$ = this.playerSubject.asObservable();
-
-  getAllMovies() {
-    return this.http.get<iPlayer[]>(environment.playersUrl)
-      .subscribe(player => this.player.next(player));
+  addPlayer(player: iPlayer) {
+    return this.http.post<iPlayer>(environment.playersUrl, player)
+      .subscribe(newPlayer => {
+        this.getAllPlayers();
+      });
   }
 
-  // addMovie(movie: iMovies) {
-  //   return this.http.post<iMovies>(environment.playersUrl, movie)
-  //     .subscribe(newMovie => {
-  //       this.getAllMovies();
-  //     });
-  // }
-
-  // deleteMovie(id: number) {
-  //   return this.http.delete(${environment.playersUrl}/${id})
-  //     .subscribe(() => {
-  //       this.getAllMovies();
-  //     });
-  // }
+  deletePlayer(id: number) {
+    return this.http.delete(`${environment.playersUrl}/${id}`)
+      .subscribe(() => {
+        this.getAllPlayers();
+      });
+  }
 
   addToFav(prod: iPlayer) {
     const player = this.fav.find(player => player.id === prod.id);
