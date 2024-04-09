@@ -4,7 +4,6 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { BehaviorSubject, map, tap, Observable } from 'rxjs';
-import { UserService } from '../user.service';
 import { environment } from '../../environments/environment.development';
 import { iLogin } from '../models/login';
 
@@ -69,16 +68,16 @@ export class AuthService {
 
   autoLogout(jwt: string): void {
     const expirationDate = this.jwtHelper.getTokenExpirationDate(jwt);
-    
+
     if (expirationDate) {
       const expiresInMs = expirationDate.getTime() - new Date().getTime();
-      
+
       setTimeout(() => {
         this.logout();
       }, expiresInMs);
     }
   }
-  
+
 
   restoreUser(){
     const userJson = localStorage.getItem('accessData')

@@ -27,6 +27,13 @@
       "firstName": "Rosa",
       "lastName": "sorpreso",
       "id": 4
+    },
+    {
+      "email": "ale@maz.it",
+      "password": "$2a$10$gY.taHyswFodpIBpnnrEJOQM3W/nOvRQp6kCLum/ucAt66S8wkLta",
+      "firstName": "ale",
+      "lastName": "mazzocchi",
+      "id": 5
     }
   ],
   "players": []
