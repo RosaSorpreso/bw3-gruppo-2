@@ -1,1 +1,20 @@
-<p>players works!</p>
+<div class="container mt-5 pt-3">
+  <h1 class="text-center text-white">Scegli i tuoi Developers:</h1>
+  <div class="row">
+    <div *ngFor="let player of players"
+    class=" col-12 col-md-6 col-xl-4 card text-bg-dark p-0">
+      <img src="https://picsum.photos/200/300" class="card-img">
+      <div class="card-img-overlay">
+        <h5 class="card-title shadow-text fs-3 text-center">{{player.firstName | titlecase}} {{player.lastName | titlecase}}</h5>
+        <div class="d-flex justify-content-center gap-5 align-items-center">
+          <p class="card-text shadow-text fs-5 mb-0">Forza: {{player.strenght}}</p>
+          <p class="card-text shadow-text"><small>Prezzo: {{player.price}}₪</small></p>
+        </div>
+        <div class="text-center mt-2 hover">
+          <p class="card-text shadow-text fs-5 mb-1">Ruolo: <b>{{player.role}}</b></p>
+          <p class="card-text shadow-text">Abilità: {{player.skills}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
