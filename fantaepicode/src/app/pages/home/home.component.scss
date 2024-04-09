@@ -18,6 +18,7 @@ code {
 .nft {
     user-select: none;
     max-width: 300px;
+    height: 620px;
     margin: 5rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
@@ -45,7 +46,7 @@ code {
     .main {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        
         padding: 1rem;
 
         .tokenImage {
@@ -58,6 +59,7 @@ code {
         .description {
             margin: 0.5rem 0;
             color: #a89ec9;
+            height: 220px;
         }
 
         .tokenInfo {
@@ -158,4 +160,13 @@ code {
         font-size: 20rem;
         filter: opacity(0.5);
     }
+}
+
+.name{
+    text-shadow: -4px -2px 7px rgba(255, 255, 255, 0.56), 3px 5px 7px rgba(255,255,255,0.56);
+}
+
+.forza{
+    text-shadow: -4px -2px 7px rgba(238, 131, 229, 0.56), 3px 5px 7px rgba(238, 131, 229,0.56);
+    color:  rgb(238, 131, 229);
 }
