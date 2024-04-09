@@ -20,6 +20,13 @@
       "firstName": "t",
       "lastName": "t",
       "id": 3
+    },
+    {
+      "email": "rosasorpreso@gmail.com",
+      "password": "$2a$10$MuOZaFfTP27lzE25c6W9TuT0vrPsyigcrAY9/KbEnzBKkYctxYtYa",
+      "firstName": "Rosa",
+      "lastName": "sorpreso",
+      "id": 4
     }
   ],
   "players": []

@@ -8,14 +8,13 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule),
-    canActivate: [GuestGuard],
-    canActivateChild:[GuestGuard]
+    canActivate: [GuestGuard]
   },
   {
     path: 'homepage',
     loadChildren: () => import('./pages/home/home.module').then(m => m.HomeModule),
     canActivate: [AuthGuard]
-    
+
   },
   {
     path: 'profile',
