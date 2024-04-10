@@ -8,47 +8,48 @@
       <div class="d-flex flex-column gap-2">
         <div class="form-floating mb-5">
           <input [(ngModel)]="newPlayer.firstName" placeholder="Nome" id="floatingName"
-          class="form-control border border-primary">
+          class="form-control border border-primary" name="nome">
           <label class="" for="floatingName">Nome:</label>
         </div>
         <div class="form-floating mb-5">
           <input [(ngModel)]="newPlayer.lastName" placeholder="Cognome"
-          class="form form-control border border-primary">
+          class="form form-control border border-primary" name="
+          cognome">
           <label for="name">Nome:</label>
         </div>
 
         <div class="form-floating mb-5">
         <input [(ngModel)]="newPlayer.role" placeholder="Ruolo" id="role"
-        class="form form-control border border-primary">
+        class="form form-control border border-primary" name="ruolo">
         <label for="role">Ruolo:</label>
         </div>
 
         <div class="form-floating mb-5">
         <input [(ngModel)]="newPlayer.strenght" type="number" min="0" max="10" placeholder="forza"
-        class="form form-control border border-primary" id="strenght">
+        class="form form-control border border-primary" id="strenght" name="forza">
         <label for="strenght">Forza:</label>
         </div>
 
         <div class="form-floating mb-5">
         <input [(ngModel)]="newPlayer.skills[0]" placeholder="Skills" id="skill"
-        class="form form-control border border-primary">
+        class="form form-control border border-primary" name="skill">
         <label for="skill">Skills:</label>
         </div>
 
         <div class="form-floating mb-5">
         <input [(ngModel)]="newPlayer.skills[1]" placeholder="Skills"
-        class="form form-control border border-primary">
+        class="form form-control border border-primary" name="skill1">
         </div>
 
         <div class="form-floating mb-5">
 
         <input [(ngModel)]="newPlayer.skills[2]" placeholder="Skills"
-        class="form form-control border border-primary">
+        class="form form-control border border-primary" name="skill2">
         </div>
         <div class="form-floating mb-5">
 
         <input [(ngModel)]="newPlayer.price" placeholder="prezzo" id="price"
-        class="form form-control border border-primary">
+        class="form form-control border border-primary" name="prezzo">
         <label for="price">Prezzo:</label>
         </div>
       </div>
