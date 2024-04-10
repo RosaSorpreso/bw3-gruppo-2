@@ -283,17 +283,6 @@
       "role": "pixar",
       "strenght": 6,
       "image": "pixar.png"
-    },
-    {
-      "id": 21,
-      "firstName": "fred",
-      "skills": [
-        "suonare la batteria"
-      ],
-      "price": 0,
-      "role": "il barbaro",
-      "strenght": 0,
-      "image": ""
     }
   ]
 }
