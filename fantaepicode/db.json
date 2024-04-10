@@ -14,6 +14,13 @@
       "firstName": "ale",
       "lastName": "mazzocchi",
       "id": 2
+    },
+    {
+      "email": "cri@turri.it",
+      "password": "$2a$10$4fXnJeF.WfUln.jiJplsJ.GZRjT.OZi3ejQoNkClUPAuPKC2rTEMi",
+      "firstName": "cristiano",
+      "lastName": "turri",
+      "id": 3
     }
   ],
   "players": [
@@ -177,7 +184,7 @@
       "id": 13,
       "firstName": "luca",
       "skills": [
-        "non saper elencare le proprie skills",
+        "non saper elencare le proprie abilità",
         "finisce nudo ai festival",
         "chitarrista"
       ],
@@ -276,6 +283,17 @@
       "role": "pixar",
       "strenght": 6,
       "image": "pixar.png"
+    },
+    {
+      "id": 21,
+      "firstName": "fred",
+      "skills": [
+        "suonare la batteria"
+      ],
+      "price": 0,
+      "role": "il barbaro",
+      "strenght": 0,
+      "image": ""
     }
   ]
 }

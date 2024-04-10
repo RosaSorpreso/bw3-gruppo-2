@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { iPlayer } from '../../models/player';
 import { PlayersService } from '../../players.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create',
@@ -20,7 +21,9 @@ export class CreateComponent {
     image: ''
   };
 
-  constructor(private playerSvc: PlayersService) { }
+  constructor(
+    private playerSvc: PlayersService,
+    private router: Router) { }
 
   ngOnInit(): void {
     this.loadPlayer();
@@ -50,7 +53,8 @@ export class CreateComponent {
       error => {
         console.error('Error adding player:', error);
       }
-    );
+    )
+    if(this.newPlayer) this.router.navigate(['/players']);
   }
 
 

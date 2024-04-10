@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { iPlayer } from '../../models/player';
 import { PlayersService } from '../../players.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit',
@@ -14,7 +14,8 @@ export class EditComponent {
 
   constructor(
     private playerSvc: PlayersService,
-    private route:ActivatedRoute
+    private route:ActivatedRoute,
+    private router: Router
   ){}
 
     ngOnInit(){
@@ -27,7 +28,8 @@ export class EditComponent {
     }
 
     editPlayer(){
-      this.playerSvc.editPlayer(this.player).subscribe(() => alert('modificato con successo!'))
+      this.playerSvc.editPlayer(this.player).subscribe()
+      if(this.player) this.router.navigate(['/players'])
     }
 
     isCollapsed: boolean = true;
