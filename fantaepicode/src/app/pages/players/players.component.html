@@ -2,10 +2,10 @@
   <div>
       <h1 class="text-center text-white">Scegli i tuoi Developers:</h1>
       <div class="d-flex gap-3 justify-content-center align-items-center my-3">
-        <p class="text-white fw-bold mb-0">ordina in modo: </p>
-        <button (click)="filterPlayers()" class="btn btn-info btn-sm">decrescente</button>
-        <button (click)="filterPlayers2()" class="btn btn-info btn-sm">crescente</button>
-        <button (click)="filterPlayers3()" class="btn btn-info btn-sm">casuale</button>
+        <p class="text-white fw-bold mb-0">visualizzali in modo: </p>
+        <button (click)="filterPlayers3()" class="btn btn-info btn-sm text-white">casuale</button>
+        <button (click)="filterPlayers()" class="btn btn-info btn-sm text-white">decrescente</button>
+        <button (click)="filterPlayers2()" class="btn btn-info btn-sm text-white">crescente</button>
       </div>
   </div>
   <div class="row">
@@ -26,7 +26,7 @@
                   </div>
                   <p class="mb-2 fw-bold text-white name">{{p.role | titlecase}}</p>
                   <ul class='description mt-4'>
-                      <p class="fs-5  mb-0">Abilità</p>
+                      <p class="fs-5  mb-0">Abilità:</p>
                       <li *ngFor="let skill of p.skills">
                           {{skill}}
                       </li>
@@ -39,7 +39,7 @@
                           <button (click)="deletePlayer(p.id)" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Elimina</button>
                       </div>
                       <div *ngIf="user?.admin">
-                          <button [routerLink]="['/edit',p.id]" class="btn btn-primary btn-sm">Modifica</button>
+                          <button [routerLink]="['/edit',p.id]" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Modifica</button>
                       </div>
                       <div class="duration">
                           <button (click)="addToFavs(p)" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Compra</button>

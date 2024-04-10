@@ -22,7 +22,7 @@
 
   width: 60px;
   &.expanded {
-    width: 150px;
+    width: 200px;
 
     .header {
       h1 {
@@ -159,5 +159,9 @@
 }
 
 .logo{
+  width: 70px;
+}
+
+.snap{
   width: 50px;
 }

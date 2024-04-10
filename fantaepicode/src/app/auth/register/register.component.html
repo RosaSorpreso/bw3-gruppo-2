@@ -1,7 +1,7 @@
 <div class="container col-xxl-8 px-4 py-5">
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5 vertical-center">
     <div class="col-lg-6 text-center">
-      <form class="p-4 p-md-5 border rounded-3 alert alert-success border-success">
+      <form class="p-4 p-md-5 border rounded-3 bg-form">
         <div class="form-floating mb-3">
           <input [(ngModel)]="registerData.firstName"
           type="text" class="form-control" id="floatingFirstName" name="firstName">
@@ -22,11 +22,17 @@
           type="password" class="form-control" id="floatingPassword" name="password">
           <label for="floatingPassword">Choose a Password</label>
         </div>
-        <button (click)="signUp()" class="w-100 btn btn-lg btn-success" type="submit">Sign Up</button>
+        <button (click)="signUp()" class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
         <hr class="my-4">
-        <small class="text-body-secondary">Already a member of <span class="fst-italic">Ross+</span>?
-          <a routerLink="/login" class="text-decoration-none text-success">Sign In!</a> </small>
+        <small class="text-body-light">Already a member of
+          <img src="../../../assets/img/epicode_logo.png" class="logo-small">
+          <img class="snap-small" src="../../../assets/img/snap.png">?
+          <a routerLink="/login" class="text-decoration-none text-primary">Sign In!</a> </small>
       </form>
+    </div>
+    <div class="col-lg-6 d-flex flex-column align-items-center">
+      <img src="../../../assets/img/epicode_logo.png" class="logo">
+      <img class="snap" src="../../../assets/img/snap.png">
     </div>
   </div>
 </div>

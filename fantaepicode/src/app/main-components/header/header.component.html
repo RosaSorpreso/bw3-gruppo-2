@@ -1,10 +1,10 @@
 <div class="sidebar" [ngClass]="{ 'expanded': isExpanded }">
   <div class="header">
-    <h1 class="title text-white">
-      Fanta
-      <img *ngIf="isExpanded" src="../../../assets/img/epicode_logo.png" class="logo">
-    </h1>
-    <div class="toggle" (click)="handleSidebarToggle()">
+    <div *ngIf="isExpanded" class="ms-2 d-flex align-items-center">
+      <img src="../../../assets/img/epicode_logo.png" class="logo">
+      <img class="snap" src="../../../assets/img/snap.png">
+    </div>
+    <div class="toggle mb-3" (click)="handleSidebarToggle()">
       <span class="chevron"></span>
     </div>
   </div>
