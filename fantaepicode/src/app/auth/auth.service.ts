@@ -8,7 +8,7 @@ import { environment } from '../../environments/environment.development';
 import { iLogin } from '../models/login';
 
 type AccessData = {
-  token:string,
+  accessToken:string,
   user:iUser
 }
 
@@ -48,7 +48,7 @@ export class AuthService {
     .pipe(tap(data => {
       this.authSubj.next(data.user)
       localStorage.setItem('accessData', JSON.stringify(data))
-      this.autoLogout(data.token)
+      this.autoLogout(data.accessToken)
     }))
   }
 
@@ -62,8 +62,8 @@ export class AuthService {
     const userJson = localStorage.getItem('accessData')
     if(!userJson) return ''
     const accessData:AccessData = JSON.parse(userJson)
-    if(this.jwtHelper.isTokenExpired(accessData.token)) return '';
-    return accessData.token
+    if(this.jwtHelper.isTokenExpired(accessData.accessToken)) return '';
+    return accessData.accessToken
   }
 
   autoLogout(jwt: string): void {
@@ -84,12 +84,10 @@ export class AuthService {
 
     if(!userJson) return;
     const accessData:AccessData = JSON.parse(userJson)
-    if (accessData.token && accessData.user) {
+    if (accessData.accessToken && accessData.user) {
       this.authSubj.next(accessData.user);
-      this.autoLogout(accessData.token);
+      this.autoLogout(accessData.accessToken);
     }
-    this.authSubj.next(accessData.user)
-    this.autoLogout(accessData.token)
   }
 
   errors(err: any) {
