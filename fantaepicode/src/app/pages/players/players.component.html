@@ -27,7 +27,7 @@
                       class="btn btn-primary btn-sm">Elimina</button>
                   </div>
                   <div *ngIf="user?.admin">
-                    <button [routerLink]="['/edit',p.id]"
+                    <button [routerLink]="['/edit',p.id]" [disabled]="isFav(p.id)"
                       class="btn btn-primary btn-sm">Modifica</button>
                   </div>
                   <div class="duration">
