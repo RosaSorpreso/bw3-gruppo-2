@@ -81,6 +81,19 @@
       "id": 3
     },
     {
+      "id": 4,
+      "firstName": "ludo",
+      "lastName": "l",
+      "skills": [
+        "odiare tanto js",
+        "routing"
+      ],
+      "price": "100",
+      "role": "",
+      "strenght": 10,
+      "image": ""
+    },
+    {
       "id": 5,
       "firstName": "ludo",
       "lastName": "l",
