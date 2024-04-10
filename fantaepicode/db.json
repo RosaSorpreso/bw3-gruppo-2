@@ -41,7 +41,7 @@
       ],
       "price": 75,
       "role": "la dorce",
-      "strenght": 6,
+      "strenght": 7,
       "image": "sara.jpg",
       "id": 2
     },
@@ -49,7 +49,7 @@
       "firstName": "Alessandro",
       "lastName": "Mazzocchi",
       "skills": [
-        "Nascondere la pelata",
+        "Nascondere bene la pelata",
         "riflettere sotto il sole",
         "contare all'indietro"
       ],
@@ -58,6 +58,188 @@
       "strenght": 8.5,
       "image": "ale.jpeg",
       "id": 3
+    },
+    {
+      "id": 4,
+      "firstName": "fred",
+      "lastName": "z",
+      "skills": [
+        "suonare la batteria",
+        "sorridere quando la gente muore",
+        "capacità di rollaggio: elevate"
+      ],
+      "price": "70",
+      "role": "il barbaro",
+      "strenght": 7.5,
+      "image": "fred.jpeg"
+    },
+    {
+      "id": 5,
+      "firstName": "cristiano",
+      "lastName": "",
+      "skills": [
+        "sonno perenne",
+        "debugger poco competente",
+        "ubriacatura facile"
+      ],
+      "price": "85",
+      "role": "il valentinuzzi",
+      "strenght": 9,
+      "image": "cristiano.jpeg"
+    },
+    {
+      "id": 6,
+      "firstName": "simone",
+      "lastName": "<",
+      "skills": [
+        "sa fare l'amatriciana vegana",
+        "donatore di organi",
+        "crea pozzi d'acqua in africa"
+      ],
+      "price": "100",
+      "role": "papa emerito (il corpo di cristo)",
+      "strenght": 10,
+      "image": "iengo.jpeg"
+    },
+    {
+      "id": 7,
+      "firstName": "ivan",
+      "lastName": "z",
+      "skills": [
+        "best driver",
+        "scooby doo spammer",
+        "seduttore di sudamericane"
+      ],
+      "price": "75",
+      "role": "il toretto di milano",
+      "strenght": 7,
+      "image": "ivan.jpeg"
+    },
+    {
+      "id": 8,
+      "firstName": "Emanuel",
+      "lastName": "z",
+      "skills": [
+        "linux distro: tutte",
+        "alcolista di alti livelli",
+        "gioca alle principesse"
+      ],
+      "price": "80",
+      "role": "il formattatore",
+      "strenght": 8,
+      "image": "emanuel.jpeg"
+    },
+    {
+      "id": 9,
+      "firstName": "luca",
+      "lastName": "z",
+      "skills": [
+        "balla la fresca",
+        "ex tossico",
+        "still alcolista"
+      ],
+      "price": "100",
+      "role": "il vice",
+      "strenght": 9.5,
+      "image": "luca.jpeg"
+    },
+    {
+      "id": 10,
+      "firstName": "franz",
+      "lastName": "<",
+      "skills": [
+        "lanciatore di coriandoli",
+        "sommelier di caffè",
+        "abbelli"
+      ],
+      "price": "100",
+      "role": "il mentor",
+      "strenght": 10,
+      "image": "franz.jpeg"
+    },
+    {
+      "id": 11,
+      "firstName": "luigi",
+      "lastName": "<",
+      "skills": [
+        "sì",
+        "chitarrologo",
+        "exclusive content creator"
+      ],
+      "price": "70",
+      "role": "lo psicologo",
+      "strenght": 6.5,
+      "image": "luigi.png"
+    },
+    {
+      "id": 12,
+      "firstName": "federico",
+      "lastName": "<",
+      "skills": [
+        "inline style",
+        "!important",
+        "passamontagnatore seriale"
+      ],
+      "price": "90",
+      "role": "lelly kelly",
+      "strenght": 9,
+      "image": "carcone.jpeg"
+    },
+    {
+      "id": 13,
+      "firstName": "luca",
+      "lastName": "<",
+      "skills": [
+        "non saper elencare le proprie skills",
+        "finisce nudo ai festival",
+        "chitarrista"
+      ],
+      "price": "85",
+      "role": "il fixatore di login",
+      "strenght": 9,
+      "image": "grossi.png"
+    },
+    {
+      "id": 14,
+      "firstName": "rosa",
+      "lastName": "<",
+      "skills": [
+        "permalosità campana",
+        "mangia spesso patatine",
+        "sonno perenne"
+      ],
+      "price": "90",
+      "role": "la dittatrice",
+      "strenght": 8.5,
+      "image": "rosa.jpeg"
+    },
+    {
+      "id": 15,
+      "firstName": "ludovica",
+      "lastName": "<",
+      "skills": [
+        "odio profondo per js",
+        "fare i dolci e poi mangiarli",
+        "è calabrese ma non mangia piccante"
+      ],
+      "price": "80",
+      "role": "maestra del routing",
+      "strenght": 7.5,
+      "image": "ludo.jpeg"
+    },
+    {
+      "id": 16,
+      "firstName": "mirko",
+      "lastName": "<",
+      "skills": [
+        "resistenza allo style",
+        "gin tonic shield +22%",
+        "vista laser"
+      ],
+      "price": "65",
+      "role": "non definito",
+      "strenght": 6,
+      "image": "mirko.jpeg"
     }
   ]
 }

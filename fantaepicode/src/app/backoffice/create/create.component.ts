@@ -35,18 +35,26 @@ export class CreateComponent {
   }
 
   addPlayer() {
-    this.playerSvc.addPlayer(this.newPlayer);
-    this.newPlayer = {
-      id: 0,
-      firstName: '',
-      lastName: '',
-      skills:[''],
-      price: 0,
-      role: '',
-      strenght: 0,
-      image: ''
-    };
+    this.playerSvc.addPlayer(this.newPlayer).subscribe(
+      newPlayer => {
+        this.players.push(newPlayer);
+        this.newPlayer = {
+          id: 0,
+          firstName: '',
+          lastName: '',
+          skills:[''],
+          price: 0,
+          role: '',
+          strenght: 0,
+          image: ''
+        };
+      },
+      error => {
+        console.error('Error adding player:', error);
+      }
+    );
   }
+
 
   isCollapsed: boolean = true;
   toggleCollapse() {
