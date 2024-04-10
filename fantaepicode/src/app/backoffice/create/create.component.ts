@@ -47,4 +47,9 @@ export class CreateComponent {
       image: ''
     };
   }
+
+  isCollapsed: boolean = true;
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

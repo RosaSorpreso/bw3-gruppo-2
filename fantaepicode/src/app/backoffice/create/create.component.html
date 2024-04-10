@@ -30,24 +30,26 @@
         <label for="strenght">Forza:</label>
         </div>
 
-        <div class="form-floating mb-5">
-        <input [(ngModel)]="newPlayer.skills[0]" placeholder="Skills" id="skill"
-        class="form form-control border border-primary" name="skill">
-        <label for="skill">Skills:</label>
-        </div>
+        <div class="form-floating mb-5 d-flex gap-5 align-items-center">
+          <input [(ngModel)]="newPlayer.skills[0]" placeholder="Skills" id="skill"
+          class="form form-control border border-primary" name="skill">
+          <label for="skill">Skills:</label>
+          <button class="btn btn-info btn-sm h-25" (click)="toggleCollapse()">+</button>
+      </div>
+
+      <div [ngClass]="isCollapsed ? 'collapse-content' : 'expand-content'">
+          <div class="form-floating mb-5">
+              <input [(ngModel)]="newPlayer.skills[1]" placeholder="Skills"
+              class="form form-control border border-primary" name="skill1">
+          </div>
+
+          <div class="form-floating mb-5">
+              <input [(ngModel)]="newPlayer.skills[2]" placeholder="Skills"
+              class="form form-control border border-primary" name="skill2">
+          </div>
+      </div>
 
         <div class="form-floating mb-5">
-        <input [(ngModel)]="newPlayer.skills[1]" placeholder="Skills"
-        class="form form-control border border-primary" name="skill1">
-        </div>
-
-        <div class="form-floating mb-5">
-
-        <input [(ngModel)]="newPlayer.skills[2]" placeholder="Skills"
-        class="form form-control border border-primary" name="skill2">
-        </div>
-        <div class="form-floating mb-5">
-
         <input [(ngModel)]="newPlayer.price" placeholder="prezzo" id="price"
         class="form form-control border border-primary" name="prezzo">
         <label for="price">Prezzo:</label>
