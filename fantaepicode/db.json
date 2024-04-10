@@ -84,11 +84,11 @@
       "firstName": "ludo",
       "lastName": "l",
       "skills": [
-        "odiare js",
+        "odiare tanto js",
         "routing"
       ],
       "price": "100",
-      "role": "ludo",
+      "role": "",
       "strenght": 10,
       "image": ""
     }
