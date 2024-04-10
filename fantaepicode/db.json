@@ -27,7 +27,7 @@
       ],
       "price": 100,
       "role": "il presidente",
-      "strenght": 8,
+      "strenght": 12,
       "image": "dario.jpeg",
       "id": 1
     },
@@ -110,9 +110,9 @@
         "scooby doo spammer",
         "seduttore di sudamericane"
       ],
-      "price": "75",
+      "price": "90",
       "role": "il toretto di milano",
-      "strenght": 7,
+      "strenght": 220,
       "image": "ivan.jpeg"
     },
     {
@@ -168,7 +168,7 @@
       ],
       "price": "70",
       "role": "lo psicologo",
-      "strenght": 6.5,
+      "strenght": 7,
       "image": "luigi.png"
     },
     {
@@ -238,8 +238,64 @@
       ],
       "price": "65",
       "role": "non definito",
-      "strenght": 6,
+      "strenght": 7,
       "image": "mirko.jpeg"
+    },
+    {
+      "id": 17,
+      "firstName": "michele",
+      "lastName": "<",
+      "skills": [
+        "navigare i 7 mari",
+        "mangiare la diavola",
+        "usare le best practices"
+      ],
+      "price": "500",
+      "role": "il capitano",
+      "strenght": 1000,
+      "image": "michele.jpeg"
+    },
+    {
+      "id": 18,
+      "firstName": "daniele",
+      "lastName": "<",
+      "skills": [
+        "se ha voglia è divertente",
+        "beve per dimenticare",
+        "nu ten ciort"
+      ],
+      "price": "75",
+      "role": "il cucciolo",
+      "strenght": 7.5,
+      "image": "daniele.jpeg"
+    },
+    {
+      "id": 19,
+      "firstName": "andrea",
+      "lastName": "<",
+      "skills": [
+        "forza roma",
+        "forza roma",
+        "roma forza"
+      ],
+      "price": "90",
+      "role": "Dr. Dre",
+      "strenght": 8.5,
+      "image": "andrea.jpeg"
+    },
+    {
+      "id": 20,
+      "firstName": "gianluca",
+      "lastName": "<",
+      "skills": [
+        "a basso consumo",
+        "classe energetica A++",
+        "compatibile con remo"
+      ],
+      "price": "60",
+      "role": "pixar",
+      "strenght": 6,
+      "image": "pixar.png"
     }
   ]
 }

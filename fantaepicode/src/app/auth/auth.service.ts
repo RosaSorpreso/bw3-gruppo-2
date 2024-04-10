@@ -81,12 +81,17 @@ export class AuthService {
 
   restoreUser(){
     const userJson = localStorage.getItem('accessData')
+
     if(!userJson) return;
     const accessData:AccessData = JSON.parse(userJson)
-    if(this.jwtHelper.isTokenExpired(accessData.token)) return;
+    if (accessData.token && accessData.user) {
+      this.authSubj.next(accessData.user);
+      this.autoLogout(accessData.token);
+    }
     this.authSubj.next(accessData.user)
     this.autoLogout(accessData.token)
   }
+
   errors(err: any) {
     switch (err.error) {
         case "Email and Password are required":

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, GuardResult, MaybeAsync, Router, RouterStateSnapshot } from '@angular/router';
 import { AuthService } from './auth.service';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +13,21 @@ export class AuthGuard {
     private router:Router
     ){}
 
-  canActivate(
-    route: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): MaybeAsync<GuardResult> {
-      if(!this.authSvc.isLoggedIn$){
-        this.router.navigate(['/register'])
-      }
-      return this.authSvc.isLoggedIn$
-  }
+    canActivate(
+      route: ActivatedRouteSnapshot,
+      state: RouterStateSnapshot): MaybeAsync<GuardResult> {
+        return this.authSvc.isLoggedIn$.pipe(
+          map(isLoggedIn => {
+            if (isLoggedIn) {
+              return true;
+            } else {
+              this.router.navigate(['']);
+              return false;
+            }
+          })
+        );
+    }
+
   canActivateChild(
     childRoute: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): MaybeAsync<GuardResult> {
