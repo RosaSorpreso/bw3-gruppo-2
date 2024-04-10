@@ -21,11 +21,11 @@
                   <div class="price">
                       <p class="mb-0">{{p.price}} ₪</p>
                   </div>
-                  <div>
+                  <div *ngIf="admin">
                     <button (click)="deleteMovie(p.id)" [disabled]="isFav(p.id)"
                       class="btn btn-primary btn-sm">Elimina</button>
                   </div>
-                  <div>
+                  <div *ngIf="admin">
                     <button [routerLink]="['/edit',p.id]"
                       class="btn btn-primary btn-sm">Modifica</button>
                   </div>

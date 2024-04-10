@@ -1,11 +1,12 @@
 {
   "users": [
     {
-      "email": "a@g@it",
+      "email": "admin@g.it",
       "password": "$2a$10$OOuHJsvpKrr7bLpe7NLczu3cY0i8CCdoHVQpFokca34X.k.BPduYG",
       "firstName": "a",
       "lastName": "a",
-      "id": 1
+      "id": 1,
+      "admin": true
     },
     {
       "email": "a@b.it",

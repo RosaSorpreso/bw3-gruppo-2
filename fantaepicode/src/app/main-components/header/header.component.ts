@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { AuthService } from '../../auth/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -11,4 +12,15 @@ export class HeaderComponent {
   @Output() toggleSidebar: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   handleSidebarToggle = () => this.toggleSidebar.emit(!this.isExpanded);
+
+  constructor(private authSvc:AuthService) { }
+
+  ngOnInit() {
+
+  }
+
+  logout(){
+    this.authSvc.logout();
+  }
+
 }

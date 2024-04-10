@@ -10,7 +10,7 @@ import { PlayersService } from '../../players.service';
 export class PlayersComponent {
 
   players: iPlayer[] = []
-
+admin = false
   constructor(private playerSvc: PlayersService,){}
 
   ngOnInit() {

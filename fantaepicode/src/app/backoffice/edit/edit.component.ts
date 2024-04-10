@@ -29,4 +29,9 @@ export class EditComponent {
     editPlayer(){
       this.playerSvc.editPlayer(this.player).subscribe(() => alert('modificato con successo!'))
     }
+
+    isCollapsed: boolean = true;
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

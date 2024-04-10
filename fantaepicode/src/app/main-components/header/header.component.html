@@ -12,31 +12,62 @@
     <div class="link">
       <div class="content" [routerLink]="['/homepage']" [routerLinkActive]="'active'">
         <div class="icon">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-            <title>Stockholm-icons / Home / Flower2</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-              <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-            </g>
-          </svg>
+          <i class="bi bi-house"></i>
         </div>
         <div class="title">Home</div>
       </div>
     </div>
-    <div class="link with-children">
+    <div class="link">
+      <div class="content" [routerLink]="['/players']" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-joystick"></i>
+        </div>
+        <div class="title">Players</div>
+      </div>
+    </div>
+    <div class="link">
+      <div class="content" [routerLink]="['/users']" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-people"></i>
+        </div>
+        <div class="title">Users</div>
+      </div>
+    </div>
+    <div class="link">
+      <div class="content" [routerLink]="['/profile']" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-person-lines-fill"></i>
+        </div>
+        <div class="title">Profile</div>
+      </div>
+    </div>
+    <div class="link" routerLink="/login" (click)="logout()">
+      <div class="content" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-box-arrow-left"></i>
+        </div>
+        <div class="title">Logout</div>
+      </div>
+    </div>
+    <div class="link">
+      <div class="content" [routerLink]="['/create']" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-plus-square"></i>
+        </div>
+        <div class="title">Create</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer"></div>
+</div>
+
+<!--
+  <div class="link with-children">
       <div class="content" [routerLink]="['/profile']" [routerLinkActive]="'active'">
         <div class="icon">
           <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+            
             <title>Stockholm-icons / Home / Flower2</title>
             <desc>Created with Sketch.</desc>
             <defs></defs>
@@ -59,7 +90,7 @@
             <div class="icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                
                 <title>Stockholm-icons / Home / Flower2</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
@@ -82,7 +113,7 @@
             <div class="icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                
                 <title>Stockholm-icons / Home / Flower2</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
@@ -105,7 +136,7 @@
             <div class="icon">
               <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink">
-                <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+                
                 <title>Stockholm-icons / Home / Flower2</title>
                 <desc>Created with Sketch.</desc>
                 <defs></defs>
@@ -124,28 +155,4 @@
         </div>
       </div>
     </div>
-    <div class="link">
-      <div class="content" [routerLink]="['/bookings']" [routerLinkActive]="'active'">
-        <div class="icon">
-          <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-            <title>Stockholm-icons / Home / Flower2</title>
-            <desc>Created with Sketch.</desc>
-            <defs></defs>
-            <g id="Stockholm-icons-/-Home-/-Flower2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <polygon id="bound" points="0 0 24 0 24 24 0 24"></polygon>
-              <circle id="Oval-32" fill="#000000" opacity="0.3" cx="15" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy" fill="#000000" opacity="0.3" cx="9" cy="17" r="5"></circle>
-              <circle id="Oval-32-Copy-2" fill="#000000" opacity="0.3" cx="7" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-3" fill="#000000" opacity="0.3" cx="17" cy="11" r="5"></circle>
-              <circle id="Oval-32-Copy-4" fill="#000000" opacity="0.3" cx="12" cy="7" r="5"></circle>
-            </g>
-          </svg>
-        </div>
-        <div class="title">Bookings</div>
-      </div>
-    </div>
-  </div>
-  <div class="footer"></div>
-</div>
+-->
