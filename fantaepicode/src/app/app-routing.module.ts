@@ -34,7 +34,7 @@ const routes: Routes = [
   {
     path: 'create',
     loadChildren: () => import('./backoffice/create/create.module').then(m => m.CreateModule),
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path: 'edit',
