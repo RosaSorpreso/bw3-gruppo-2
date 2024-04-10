@@ -19,7 +19,6 @@
   "players": [
     {
       "firstName": "Dario",
-      "lastName": "Cantini",
       "skills": [
         "sbagliare le dosi del sale nella pasta",
         "contare i semini delle fragole",
@@ -33,7 +32,6 @@
     },
     {
       "firstName": "Sara",
-      "lastName": "Porricino",
       "skills": [
         "dorce spammer",
         "krunker addicted",
@@ -47,7 +45,6 @@
     },
     {
       "firstName": "Alessandro",
-      "lastName": "Mazzocchi",
       "skills": [
         "Nascondere bene la pelata",
         "riflettere sotto il sole",
@@ -62,7 +59,6 @@
     {
       "id": 4,
       "firstName": "fred",
-      "lastName": "z",
       "skills": [
         "suonare la batteria",
         "sorridere quando la gente muore",
@@ -76,7 +72,6 @@
     {
       "id": 5,
       "firstName": "cristiano",
-      "lastName": "",
       "skills": [
         "sonno perenne",
         "debugger poco competente",
@@ -90,7 +85,6 @@
     {
       "id": 6,
       "firstName": "simone",
-      "lastName": "<",
       "skills": [
         "sa fare l'amatriciana vegana",
         "donatore di organi",
@@ -104,7 +98,6 @@
     {
       "id": 7,
       "firstName": "ivan",
-      "lastName": "z",
       "skills": [
         "best driver",
         "scooby doo spammer",
@@ -118,7 +111,6 @@
     {
       "id": 8,
       "firstName": "Emanuel",
-      "lastName": "z",
       "skills": [
         "linux distro: tutte",
         "alcolista di alti livelli",
@@ -132,7 +124,6 @@
     {
       "id": 9,
       "firstName": "luca",
-      "lastName": "z",
       "skills": [
         "balla la fresca",
         "ex tossico",
@@ -146,7 +137,6 @@
     {
       "id": 10,
       "firstName": "franz",
-      "lastName": "<",
       "skills": [
         "lanciatore di coriandoli",
         "sommelier di caffè",
@@ -160,7 +150,6 @@
     {
       "id": 11,
       "firstName": "luigi",
-      "lastName": "<",
       "skills": [
         "sì",
         "chitarrologo",
@@ -174,7 +163,6 @@
     {
       "id": 12,
       "firstName": "federico",
-      "lastName": "<",
       "skills": [
         "inline style",
         "!important",
@@ -188,7 +176,6 @@
     {
       "id": 13,
       "firstName": "luca",
-      "lastName": "<",
       "skills": [
         "non saper elencare le proprie skills",
         "finisce nudo ai festival",
@@ -202,7 +189,6 @@
     {
       "id": 14,
       "firstName": "rosa",
-      "lastName": "<",
       "skills": [
         "permalosità campana",
         "mangia spesso patatine",
@@ -216,7 +202,6 @@
     {
       "id": 15,
       "firstName": "ludovica",
-      "lastName": "<",
       "skills": [
         "odio profondo per js",
         "fare i dolci e poi mangiarli",
@@ -230,7 +215,6 @@
     {
       "id": 16,
       "firstName": "mirko",
-      "lastName": "<",
       "skills": [
         "resistenza allo style",
         "gin tonic shield +22%",
@@ -244,7 +228,6 @@
     {
       "id": 17,
       "firstName": "michele",
-      "lastName": "<",
       "skills": [
         "navigare i 7 mari",
         "mangiare la diavola",
@@ -258,7 +241,6 @@
     {
       "id": 18,
       "firstName": "daniele",
-      "lastName": "<",
       "skills": [
         "se ha voglia è divertente",
         "beve per dimenticare",
@@ -272,7 +254,6 @@
     {
       "id": 19,
       "firstName": "andrea",
-      "lastName": "<",
       "skills": [
         "forza roma",
         "daje roma",
@@ -286,7 +267,6 @@
     {
       "id": 20,
       "firstName": "gianluca",
-      "lastName": "<",
       "skills": [
         "a basso consumo",
         "classe energetica A++",

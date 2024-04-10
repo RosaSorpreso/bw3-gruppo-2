@@ -13,7 +13,6 @@ export class CreateComponent {
   newPlayer: iPlayer = {
     id: 0,
     firstName: '',
-    lastName: '',
     skills:[''],
     price: 0,
     role: '',
@@ -41,7 +40,6 @@ export class CreateComponent {
         this.newPlayer = {
           id: 0,
           firstName: '',
-          lastName: '',
           skills:[''],
           price: 0,
           role: '',
