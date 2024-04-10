@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { iPlayer } from '../../models/player';
 import { PlayersService } from '../../players.service';
+import { iUser } from '../../models/user';
+import { AuthService } from '../../auth/auth.service';
 
 @Component({
   selector: 'app-players',
@@ -10,8 +12,11 @@ import { PlayersService } from '../../players.service';
 export class PlayersComponent {
 
   players: iPlayer[] = []
-admin = false
-  constructor(private playerSvc: PlayersService,){}
+  user: iUser | undefined;
+
+  constructor(
+    private playerSvc: PlayersService,
+    private authSvc: AuthService){}
 
   ngOnInit() {
     this.playerSvc.getAllPlayers().subscribe(player => {
@@ -22,6 +27,10 @@ admin = false
       player => {
         this.players = player;
       });
+
+    this.authSvc.user$.subscribe(user => {
+      this.user = user || undefined;
+    })
   }
 
   addToFavs(prd:iPlayer) {
@@ -32,7 +41,7 @@ admin = false
     return this.playerSvc.isFav(id)
   }
 
-  deleteMovie(id: number) {
+  deletePlayer(id: number) {
     this.playerSvc.deletePlayer(id);
   }
 

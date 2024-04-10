@@ -1,40 +1,19 @@
 {
   "users": [
     {
-      "email": "admin@g.it",
-      "password": "$2a$10$OOuHJsvpKrr7bLpe7NLczu3cY0i8CCdoHVQpFokca34X.k.BPduYG",
-      "firstName": "a",
-      "lastName": "a",
-      "id": 1,
-      "admin": true
-    },
-    {
-      "email": "a@b.it",
-      "password": "$2a$10$zICOs9t.E1DTZ9UlOi4jAeb.VDYtSqHmX.mwCiYvG4g4SaP1/ecaS",
-      "firstName": "a",
-      "lastName": "a",
-      "id": 2
-    },
-    {
-      "email": "t@t.it",
-      "password": "$2a$10$BNV/8dxmW04BhZplDPs.U.MAPygtXG0iphU5d78oGJ/Kj0QliR/UC",
-      "firstName": "t",
-      "lastName": "t",
-      "id": 3
-    },
-    {
       "email": "rosasorpreso@gmail.com",
       "password": "$2a$10$MuOZaFfTP27lzE25c6W9TuT0vrPsyigcrAY9/KbEnzBKkYctxYtYa",
       "firstName": "Rosa",
       "lastName": "sorpreso",
-      "id": 4
+      "id": 1,
+      "admin": true
     },
     {
       "email": "ale@maz.it",
       "password": "$2a$10$gY.taHyswFodpIBpnnrEJOQM3W/nOvRQp6kCLum/ucAt66S8wkLta",
       "firstName": "ale",
       "lastName": "mazzocchi",
-      "id": 5
+      "id": 2
     }
   ],
   "players": [
@@ -89,7 +68,7 @@
         "routing"
       ],
       "price": "100",
-      "role": "",
+      "role": "ludo",
       "strenght": 10,
       "image": ""
     }
