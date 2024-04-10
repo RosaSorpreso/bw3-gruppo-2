@@ -29,7 +29,7 @@ const routes: Routes = [
   {
     path: 'players',
     loadChildren: () => import('./pages/players/players.module').then(m => m.PlayersModule),
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   },
   {
     path: 'create',
@@ -37,9 +37,9 @@ const routes: Routes = [
     //canActivate: [AuthGuard]
   },
   {
-    path: 'edit',
+    path: 'edit/:id',
     loadChildren: () => import('./backoffice/edit/edit.module').then(m => m.EditModule),
-    canActivate: [AuthGuard]
+    //canActivate: [AuthGuard]
   }
 ];
 

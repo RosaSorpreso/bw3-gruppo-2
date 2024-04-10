@@ -1,1 +1,64 @@
-<p>edit works!</p>
+<div class=" my-5 pt-3 row align-items-center">
+  <div class="svg col-4">
+    <svg id="Layer_1" height="400" class="forza1" fill="#ee83e5" viewBox="0 0 24 24" width="400" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"/></svg>
+  </div>
+  <div class="d-flex flex-column gap-3 container mt-4 col-4">
+    <h1 class="text-white text-center">Edit Player!</h1>
+    <form class="p-4 p-md-5 rounded-3 alert bg-secondary" data-np-autofill-form-type="register" data-np-checked="1" data-np-watching="1">
+      <div class="d-flex flex-column gap-2">
+        <div class="form-floating mb-5">
+          <input [(ngModel)]="player.firstName" placeholder="Nome" id="floatingName"
+          class="form-control border border-primary" name="nome">
+          <label class="" for="floatingName">Nome:</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input [(ngModel)]="player.lastName" placeholder="Cognome"
+          class="form form-control border border-primary" name="
+          cognome">
+          <label for="name">Nome:</label>
+        </div>
+
+        <div class="form-floating mb-5">
+        <input [(ngModel)]="player.role" placeholder="Ruolo" id="role"
+        class="form form-control border border-primary" name="ruolo">
+        <label for="role">Ruolo:</label>
+        </div>
+
+        <div class="form-floating mb-5">
+        <input [(ngModel)]="player.strenght" type="number" min="0" max="10" placeholder="forza"
+        class="form form-control border border-primary" id="strenght" name="forza">
+        <label for="strenght">Forza:</label>
+        </div>
+
+        <div class="form-floating mb-5">
+        <input [(ngModel)]="player.skills[0]" placeholder="Skills" id="skill"
+        class="form form-control border border-primary" name="skill">
+        <label for="skill">Skills:</label>
+        </div>
+
+        <div class="form-floating mb-5">
+        <input [(ngModel)]="player.skills[1]" placeholder="Skills"
+        class="form form-control border border-primary" name="skill1">
+        </div>
+
+        <div class="form-floating mb-5">
+
+        <input [(ngModel)]="player.skills[2]" placeholder="Skills"
+        class="form form-control border border-primary" name="skill2">
+        </div>
+        <div class="form-floating mb-5">
+
+        <input [(ngModel)]="player.price" placeholder="prezzo" id="price"
+        class="form form-control border border-primary" name="prezzo">
+        <label for="price">Prezzo:</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-sm" (click)="editPlayer()">Modifica Player</button>
+    </form>
+  </div>
+  <div class="svg-left col-4">
+    <svg id="Layer_1" height="400" class="forza" fill="#ee83e5" viewBox="0 0 24 24" width="400" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"/></svg>
+  </div>
+
+</div>
+

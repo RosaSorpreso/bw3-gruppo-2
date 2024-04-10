@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { environment } from '../environments/environment.development';
 import { iPlayer } from './models/player';
-import { BehaviorSubject, Observable, Observer, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Observer, Subject, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
@@ -13,6 +13,7 @@ export class PlayersService {
 
     player = new BehaviorSubject<iPlayer[]>([]);
     players$ = this.player.asObservable();
+    players:iPlayer[] = []
 
     getAllPlayers(): Observable<iPlayer[]> {
       return this.http.get<iPlayer[]>(environment.playersUrl)
@@ -25,6 +26,15 @@ export class PlayersService {
       .subscribe(newPlayer => {
         this.getAllPlayers();
       });
+  }
+
+  editPlayer(player:iPlayer){
+    return this.http.put<iPlayer>(environment.playersUrl + `/${player.id}`, player)
+    .pipe(tap((editedUser:iPlayer) => {
+      const index = this.players.findIndex(p => p.id === player.id)
+      this.players.splice(index, 1, editedUser)
+      this.player.next(this.players)
+    }))
   }
 
   deletePlayer(id: number) {

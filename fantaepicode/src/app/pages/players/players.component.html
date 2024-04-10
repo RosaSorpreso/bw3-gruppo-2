@@ -25,6 +25,10 @@
                     <button (click)="deleteMovie(p.id)" [disabled]="isFav(p.id)"
                       class="btn btn-primary btn-sm">Elimina</button>
                   </div>
+                  <div>
+                    <button [routerLink]="['/edit',p.id]"
+                      class="btn btn-primary btn-sm">Modifica</button>
+                  </div>
                   <div class="duration">
                       <button (click)="addToFavs(p)" [disabled]="isFav(p.id)"
                       class="btn btn-primary btn-sm">Compra</button>
