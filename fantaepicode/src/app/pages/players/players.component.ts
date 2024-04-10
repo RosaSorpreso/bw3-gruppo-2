@@ -42,7 +42,7 @@ export class PlayersComponent {
   }
 
   deletePlayer(id: number) {
-    this.playerSvc.deletePlayer(id);
+    this.playerSvc.deletePlayer(id).subscribe();
   }
 
 }

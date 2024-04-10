@@ -58,19 +58,6 @@
       "strenght": 8.5,
       "image": "ale.jpeg",
       "id": 3
-    },
-    {
-      "id": 5,
-      "firstName": "ludo",
-      "lastName": "l",
-      "skills": [
-        "odiare tanto js",
-        "routing"
-      ],
-      "price": "100",
-      "role": "ludo",
-      "strenght": 10,
-      "image": ""
     }
   ]
 }
