@@ -25,9 +25,9 @@
           <div class="nft">
             <div class="main">
               <img
-              class="tokenImage"
-              src="../../../assets/img/profile/{{ players[0].image }}"
-              alt="NFT"
+                class="tokenImage"
+                src="../../../assets/img/profile/{{ players[0].image }}"
+                alt="NFT"
               />
               <div class="d-flex justify-content-between align-items-center">
                 <p class="fs-2 name text-white mt-2 mb-0">
@@ -35,219 +35,210 @@
                 </p>
                 <p class="fs-6 forza mt-3 mb-0">
                   <svg
-                  id="Layer_1"
-                  height="15"
-                  class="forza"
-                  fill="#ee83e5"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  xmlns="http://www.w3.org/2000/svg"
-                  data-name="Layer 1"
+                    id="Layer_1"
+                    height="15"
+                    class="forza"
+                    fill="#ee83e5"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
                   >
-                  <path
-                  d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
-                  />
-                </svg>
-                {{ players[0].strenght }}
-              </p>
-            </div>
+                    <path
+                      d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+                    />
+                  </svg>
+                  {{ players[0].strenght }}
+                </p>
+              </div>
 
-            <ul class="description mt-4">
-              <p class="fs-5 mb-0">Abilità</p>
-              <li *ngFor="let skill of players[0].skills">
-                {{ skill }}
-              </li>
-            </ul>
-            <div class="tokenInfo mb-2">
-              <div class="price">
-                <p class="mb-0">{{ players[0].price }} ₪</p>
+              <ul class="description mt-4">
+                <p class="fs-5 mb-0">Abilità</p>
+                <li *ngFor="let skill of players[0].skills">
+                  {{ skill }}
+                </li>
+              </ul>
+              <div class="tokenInfo mb-2">
+                <div class="price">
+                  <p class="mb-0">{{ players[0].price }} ₪</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </label>
-      <label for="s2" id="slide2">
-        <div class="nft">
-          <div class="main">
-            <img
-            class="tokenImage"
-            src="../../../assets/img/profile/{{ players[1].image }}"
-            alt="NFT"
-            />
-            <div class="d-flex justify-content-between align-items-center">
-              <p class="fs-2 name text-white mt-2 mb-0">
-                {{ players[1].firstName }}
-              </p>
-              <p class="fs-6 forza mt-3 mb-0">
-                <svg
-                id="Layer_1"
-                height="15"
-                class="forza"
-                fill="#ee83e5"
-                viewBox="0 0 24 24"
-                width="18"
-                xmlns="http://www.w3.org/2000/svg"
-                data-name="Layer 1"
-                >
-                <path
-                d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
-                />
-              </svg>
-              {{ players[1].strenght }}
-            </p>
-          </div>
+        </label>
+        <label for="s2" id="slide2">
+          <div class="nft">
+            <div class="main">
+              <img
+                class="tokenImage"
+                src="../../../assets/img/profile/{{ players[1].image }}"
+                alt="NFT"
+              />
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="fs-2 name text-white mt-2 mb-0">
+                  {{ players[1].firstName }}
+                </p>
+                <p class="fs-6 forza mt-3 mb-0">
+                  <svg
+                    id="Layer_1"
+                    height="15"
+                    class="forza"
+                    fill="#ee83e5"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                  >
+                    <path
+                      d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+                    />
+                  </svg>
+                  {{ players[1].strenght }}
+                </p>
+              </div>
 
-          <ul class="description mt-4">
-            <p class="fs-5 mb-0">Abilità</p>
-            <li *ngFor="let skill of players[1].skills">
-              {{ skill }}
-            </li>
-          </ul>
-          <div class="tokenInfo mb-2">
-            <div class="price">
-              <p class="mb-0">{{ players[1].price }} ₪</p>
+              <ul class="description mt-4">
+                <p class="fs-5 mb-0">Abilità</p>
+                <li *ngFor="let skill of players[1].skills">
+                  {{ skill }}
+                </li>
+              </ul>
+              <div class="tokenInfo mb-2">
+                <div class="price">
+                  <p class="mb-0">{{ players[1].price }} ₪</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </label>
-    <label for="s3" id="slide3">
-      <div class="nft">
-        <div class="main">
-          <img
-          class="tokenImage"
-          src="../../../assets/img/profile/{{ players[2].image }}"
-          alt="NFT"
-          />
-          <div class="d-flex justify-content-between align-items-center">
-            <p class="fs-2 name text-white mt-2 mb-0">
-              {{ players[2].firstName }}
-            </p>
-            <p class="fs-6 forza mt-3 mb-0">
-              <svg
-              id="Layer_1"
-              height="15"
-              class="forza"
-              fill="#ee83e5"
-              viewBox="0 0 24 24"
-              width="18"
-              xmlns="http://www.w3.org/2000/svg"
-              data-name="Layer 1"
-              >
-              <path
-              d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+        </label>
+        <label for="s3" id="slide3">
+          <div class="nft">
+            <div class="main">
+              <img
+                class="tokenImage"
+                src="../../../assets/img/profile/{{ players[2].image }}"
+                alt="NFT"
               />
-            </svg>
-            {{ players[2].strenght }}
-          </p>
-        </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="fs-2 name text-white mt-2 mb-0">
+                  {{ players[2].firstName }}
+                </p>
+                <p class="fs-6 forza mt-3 mb-0">
+                  <svg
+                    id="Layer_1"
+                    height="15"
+                    class="forza"
+                    fill="#ee83e5"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                  >
+                    <path
+                      d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+                    />
+                  </svg>
+                  {{ players[2].strenght }}
+                </p>
+              </div>
 
-        <ul class="description mt-4">
-          <p class="fs-5 mb-0">Abilità</p>
-          <li *ngFor="let skill of players[2].skills">
-            {{ skill }}
-          </li>
-        </ul>
-        <div class="tokenInfo mb-2">
-          <div class="price">
-            <p class="mb-0">{{ players[2].price }} ₪</p>
+              <ul class="description mt-4">
+                <p class="fs-5 mb-0">Abilità</p>
+                <li *ngFor="let skill of players[2].skills">
+                  {{ skill }}
+                </li>
+              </ul>
+              <div class="tokenInfo mb-2">
+                <div class="price">
+                  <p class="mb-0">{{ players[2].price }} ₪</p>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </label>
-  <label for="s4" id="slide4">
-    <div class="nft">
-      <div class="main">
-        <img
-        class="tokenImage"
-        src=""
-        alt="NFT"
-        />
-        <div class="d-flex justify-content-between align-items-center">
-          <p class="fs-2 name text-white mt-2 mb-0">
-            {{ players[3].firstName }}
-          </p>
-          <p class="fs-6 forza mt-3 mb-0">
-            <svg
-            id="Layer_1"
-            height="15"
-            class="forza"
-            fill="#ee83e5"
-            viewBox="0 0 24 24"
-            width="18"
-            xmlns="http://www.w3.org/2000/svg"
-            data-name="Layer 1"
-            >
-            <path
-            d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
-            />
-          </svg>
-          {{ players[3].strenght }}
-        </p>
-      </div>
+        </label>
+        <label for="s4" id="slide4">
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="" alt="NFT" />
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="fs-2 name text-white mt-2 mb-0">
+                  {{ players[3].firstName }}
+                </p>
+                <p class="fs-6 forza mt-3 mb-0">
+                  <svg
+                    id="Layer_1"
+                    height="15"
+                    class="forza"
+                    fill="#ee83e5"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                  >
+                    <path
+                      d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+                    />
+                  </svg>
+                  {{ players[3].strenght }}
+                </p>
+              </div>
 
-      <ul class="description mt-4">
-        <p class="fs-5 mb-0">Abilità</p>
-        <li *ngFor="let skill of players[3].skills">
-          {{ skill }}
-        </li>
-      </ul>
-      <div class="tokenInfo mb-2">
-        <div class="price">
-          <p class="mb-0">{{ players[3].price }} ₪</p>
-        </div>
+              <ul class="description mt-4">
+                <p class="fs-5 mb-0">Abilità</p>
+                <li *ngFor="let skill of players[3].skills">
+                  {{ skill }}
+                </li>
+              </ul>
+              <div class="tokenInfo mb-2">
+                <div class="price">
+                  <p class="mb-0">{{ players[3].price }} ₪</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
+        <label for="s5" id="slide5">
+          <div class="nft">
+            <div class="main">
+              <img class="tokenImage" src="" alt="NFT" />
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="fs-2 name text-white mt-2 mb-0">
+                  {{ players[4].firstName }}
+                </p>
+                <p class="fs-6 forza mt-3 mb-0">
+                  <svg
+                    id="Layer_1"
+                    height="15"
+                    class="forza"
+                    fill="#ee83e5"
+                    viewBox="0 0 24 24"
+                    width="18"
+                    xmlns="http://www.w3.org/2000/svg"
+                    data-name="Layer 1"
+                  >
+                    <path
+                      d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
+                    />
+                  </svg>
+                  {{ players[4].strenght }}
+                </p>
+              </div>
+
+              <ul class="description mt-4">
+                <p class="fs-5 mb-0">Abilità</p>
+                <li *ngFor="let skill of players[4].skills">
+                  {{ skill }}
+                </li>
+              </ul>
+              <div class="tokenInfo mb-2">
+                <div class="price">
+                  <p class="mb-0">{{ players[4].price }} ₪</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </label>
       </div>
     </div>
   </div>
-</label>
-<label for="s5" id="slide5">
-  <div class="nft">
-    <div class="main">
-      <img
-      class="tokenImage"
-      src=""
-      alt="NFT"
-      />
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="fs-2 name text-white mt-2 mb-0">
-          {{ players[4].firstName }}
-        </p>
-        <p class="fs-6 forza mt-3 mb-0">
-          <svg
-          id="Layer_1"
-          height="15"
-          class="forza"
-          fill="#ee83e5"
-          viewBox="0 0 24 24"
-          width="18"
-          xmlns="http://www.w3.org/2000/svg"
-          data-name="Layer 1"
-          >
-          <path
-          d="m23.414.587a2.022 2.022 0 0 0 -1.941-.513 16.461 16.461 0 0 0 -6.479 3.983l-9.476 9.475a14.58 14.58 0 0 0 -4.376-1.522 1 1 0 0 0 -.286 1.979 12.632 12.632 0 0 1 5.353 2.387l-3.709 3.71-.793-.793a1 1 0 1 0 -1.414 1.414l3 3a1 1 0 1 0 1.414-1.414l-.793-.793 3.709-3.71a12.609 12.609 0 0 1 2.387 5.354 1 1 0 0 0 .99.856.881.881 0 0 0 .144-.011 1 1 0 0 0 .847-1.13 14.515 14.515 0 0 0 -1.522-4.376l9.475-9.476a16.52 16.52 0 0 0 4.01-6.574 1.994 1.994 0 0 0 -.54-1.846zm-4.885 7.005-9.167 9.168a11.15 11.15 0 0 0 -.988-1.134 11.36 11.36 0 0 0 -1.133-.988l9.167-9.167a14.384 14.384 0 0 1 5.584-3.464 14.453 14.453 0 0 1 -3.463 5.585z"
-          />
-        </svg>
-        {{ players[4].strenght }}
-      </p>
-    </div>
-
-    <ul class="description mt-4">
-      <p class="fs-5 mb-0">Abilità</p>
-      <li *ngFor="let skill of players[4].skills">
-        {{ skill }}
-      </li>
-    </ul>
-    <div class="tokenInfo mb-2">
-      <div class="price">
-        <p class="mb-0">{{ players[4].price }} ₪</p>
-      </div>
-    </div>
-  </div>
-</div>
-</label>
-</div>
-</div>
-</div>
-
 </div>
