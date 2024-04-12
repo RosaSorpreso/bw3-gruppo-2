@@ -10,14 +10,14 @@ import { ProfileComponent } from '../profile/profile.component';
 })
 export class GameComponent {
 
-  players:iPlayer[] = []
-  players2:iPlayer[] = []
-  strenght1:number = 0;
-  strenght2:number= 0;
-  squad:iPlayer[] = []
+  players: iPlayer[] = []
+  players2: iPlayer[] = []
+  strenght1: number = 0;
+  strenght2: number = 0;
+  squad: iPlayer[] = []
 
-  constructor(private playerSvc: PlayersService){}
-  fight:boolean =false
+  constructor(private playerSvc: PlayersService) { }
+  fight: boolean = false
 
 
 
@@ -31,9 +31,10 @@ export class GameComponent {
       player => {
         this.players = player;
       });
-      this.playerSvc.favList.subscribe((favs:iPlayer[]) => {
-        this.squad = favs
-      })
+    this.playerSvc.favList.subscribe((favs: iPlayer[]) => {
+      this.squad = favs
+    })
+    this.battleWin()
   }
   shuffle(array: any[]): any[] {
     let currentIndex = array.length;
@@ -46,8 +47,8 @@ export class GameComponent {
 
     return array;
   }
-  startFight():boolean{
-    return this.fight=true
+  startFight(): boolean {
+    return this.fight = true
   }
   getNftClasses(i: number): object {
     return {
@@ -62,8 +63,19 @@ export class GameComponent {
     };
   }
 
-  battleWin(){
-    this.players.forEach(p => this.strenght1 += p.strenght)
-    this.players.forEach(p => this.strenght2 += p.strenght)
+  battleWin() {
+    const uno = this.players.forEach(p => this.strenght1 += p.strenght)
+    const due = this.players.forEach(p => this.strenght2 += p.strenght)
+    setTimeout(() => {
+
+      if (uno > due) {
+        alert('!important Win')
+      }
+      else {
+        alert('!important Lose')
+      }
+    }
+      , 7000)
   }
+
 }
