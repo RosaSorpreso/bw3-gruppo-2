@@ -12,15 +12,32 @@ export class GameComponent {
   players:iPlayer[] =[]
 
   constructor(private playerSvc: PlayersService,){}
+  fight:boolean =false
+
+
 
   ngOnInit() {
     this.playerSvc.getAllPlayers().subscribe(player => {
-      this.players = player;
+      this.players = this.shuffle(player)
     });
 
     this.playerSvc.players$.subscribe(
       player => {
         this.players = player;
       });
+  }
+  shuffle(array: any[]): any[] {
+    let currentIndex = array.length;
+    let randomIndex: number;
+    while (currentIndex !== 0) {
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+  }
+  startFight():boolean{
+    return this.fight=true
   }
 }
