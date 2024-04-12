@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { GuestGuard } from './auth/guest.guard';
 import { AuthGuard } from './auth/auth.guard';
 import { HomeComponent } from './pages/home/home.component';
+import { AdminGuard } from './auth/admin.guard';
 
 const routes: Routes = [
   {
@@ -38,13 +39,13 @@ const routes: Routes = [
     path: 'create',
     loadChildren: () => import('./backoffice/create/create.module').then(m => m.CreateModule),
     title: 'Epicode Snap',
-    canActivate: [AuthGuard]
+    canActivate: [AdminGuard]
   },
   {
     path: 'edit/:id',
     loadChildren: () => import('./backoffice/edit/edit.module').then(m => m.EditModule),
     title: 'Epicode Snap',
-    canActivate: [AuthGuard]
+    canActivate: [AdminGuard]
   },
   { path: 'game',
     loadChildren: () => import('./pages/game/game.module').then(m => m.GameModule),

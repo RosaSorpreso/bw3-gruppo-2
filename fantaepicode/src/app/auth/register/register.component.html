@@ -5,29 +5,29 @@
         <div class="form-floating mb-3">
           <input [(ngModel)]="registerData.firstName"
           type="text" class="form-control" id="floatingFirstName" name="firstName">
-          <label for="floatingInput">First Name</label>
+          <label for="floatingInput">Nome</label>
         </div>
         <div class="form-floating mb-3">
           <input [(ngModel)]="registerData.lastName"
           type="email" class="form-control" id="floatingLastName" name="lastName">
-          <label for="floatingInput">Last Name</label>
+          <label for="floatingInput">Cognome</label>
         </div>
         <div class="form-floating mb-3">
           <input [(ngModel)]="registerData.email"
           type="email" class="form-control" id="floatingEmail" name="email">
-          <label for="floatingInput">Email address</label>
+          <label for="floatingInput">Email</label>
         </div>
         <div class="form-floating mb-3">
           <input [(ngModel)]="registerData.password"
           type="password" class="form-control" id="floatingPassword" name="password">
-          <label for="floatingPassword">Choose a Password</label>
+          <label for="floatingPassword">Scegli una Password</label>
         </div>
-        <button (click)="signUp()" class="w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+        <button (click)="signUp()" class="w-100 btn btn-lg btn-primary" type="submit">Registrati</button>
         <hr class="my-4">
-        <small class="text-body-light">Already a member of
+        <p class="text-body-light mb-0">Sei già un giocatore di
           <img src="../../../assets/img/epicode_logo.png" class="logo-small">
           <img class="snap-small" src="../../../assets/img/snap.png">?
-          <a routerLink="/login" class="text-decoration-none text-primary">Sign In!</a> </small>
+          <a routerLink="/login" class="text-decoration-none text-primary">Accedi!</a> </p>
       </form>
     </div>
     <div class="col-lg-6 d-flex flex-column align-items-center">

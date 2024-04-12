@@ -1,11 +1,11 @@
 <div class="container">
   <div>
-      <h1 class="text-center text-white">Scegli i tuoi Developers:</h1>
+      <h1 class="text-center text-white pink">Scegli i tuoi Developers:</h1>
       <div class="d-flex gap-3 justify-content-center align-items-center my-3">
-        <p class="text-white fw-bold mb-0">visualizzali in modo: </p>
-        <button (click)="filterPlayers3()" class="btn btn-info btn-sm text-white">casuale</button>
-        <button (click)="filterPlayers()" class="btn btn-info btn-sm text-white">decrescente</button>
-        <button (click)="filterPlayers2()" class="btn btn-info btn-sm text-white">crescente</button>
+        <p class="text-white fw-bold mb-0 pink">visualizzali in modo: </p>
+        <button (click)="filterPlayers3()" class="btn btn-info btn-sm text-white bottone">casuale</button>
+        <button (click)="filterPlayers()" class="btn btn-info btn-sm text-white bottone">decrescente</button>
+        <button (click)="filterPlayers2()" class="btn btn-info btn-sm text-white bottone">crescente</button>
       </div>
   </div>
   <div class="row">
@@ -36,13 +36,13 @@
                           <p class="mb-0">{{p.price}} ₪</p>
                       </div>
                       <div *ngIf="user?.admin">
-                          <button (click)="deletePlayer(p.id)" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Elimina</button>
+                          <button (click)="deletePlayer(p.id)" class="btn btn-primary btn-sm">Elimina</button>
                       </div>
                       <div *ngIf="user?.admin">
-                          <button [routerLink]="['/edit',p.id]" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Modifica</button>
+                          <button [routerLink]="['/edit',p.id]" class="btn btn-primary btn-sm">Modifica</button>
                       </div>
                       <div class="duration">
-                          <button (click)="addToFavs(p)" [disabled]="isFav(p.id)" class="btn btn-primary btn-sm">Compra</button>
+                          <button (click)="addToFavs(p)" [disabled]="isFav(p.id) || getSquad()" class="btn btn-primary btn-sm">Compra</button>
                       </div>
                   </div>
               </div>

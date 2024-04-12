@@ -21,7 +21,7 @@
   background: linear-gradient(
     0deg,
     rgba(40, 44, 52, 1) 0%,
-    rgba(17, 0, 32, 0.5) 100%
+    rgba(17, 0, 32, 1) 100%
   );
   box-shadow: 0 7px 20px 5px #00000088;
   border-radius: 0.7rem;
@@ -199,4 +199,20 @@ input {
 .cards .main {
   position: relative;
   height: 100%;
+}
+
+.logo{
+  width: 130px;
+}
+
+.snap{
+  width: 90px;
+}
+
+.top{
+  text-shadow: 2px 2px 2px rgba(238, 131, 238, 0.5)
+}
+
+.bottone{
+  box-shadow: 0px 0px 18px 2px rgba(50, 3, 62, 0.635)
 }

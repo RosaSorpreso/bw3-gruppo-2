@@ -23,11 +23,39 @@
       "id": 3
     },
     {
-      "email": "a@b.it",
-      "password": "$2a$10$izf8AOT5U6xz1E.ahQgRXu49x/WuVSfTEOmjehwvplVfpmBHALZ0O",
-      "firstName": "cristiano",
-      "lastName": "turri",
+      "email": "luca@grossi.it",
+      "password": "$2a$10$0XoskUR66joZkEfKfdlK9.2QuTRNCoqPt/o7xEHYblqYqTXVYU7.e",
+      "firstName": "luca",
+      "lastName": "grossi",
       "id": 4
+    },
+    {
+      "email": "mirko@cuciuffo.it",
+      "password": "$2a$10$RXbYcaq8eAes5Rw2A3qK/ufsXu7xQGDmYF7TxtrV0dQ9Vi990lyK.",
+      "firstName": "mirko",
+      "lastName": "cuciuffo",
+      "id": 5
+    },
+    {
+      "email": "ludo@defa.it",
+      "password": "$2a$10$db9QyqagWLJI0Wbmfy6QEOXy0fODBmvIoOW9GN/rvEPuIq58BrrSW",
+      "firstName": "ludovica",
+      "lastName": "de fazio",
+      "id": 6
+    },
+    {
+      "email": "ivan@cecchi.it",
+      "password": "$2a$10$n4/tIeqkrD9fJquwSky8kOx5TcZj5G/xvE9g1XmzchmH56P40n0ey",
+      "firstName": "ivan",
+      "lastName": "cecchi",
+      "id": 7
+    },
+    {
+      "email": "diego@cane.it",
+      "password": "$2a$10$EGGXhF57y0Say475AXTM7OVcZrJoclQ00JayBdtWWuvuJnDin4ilm",
+      "firstName": "diego",
+      "lastName": "cane",
+      "id": 8
     }
   ],
   "players": [
