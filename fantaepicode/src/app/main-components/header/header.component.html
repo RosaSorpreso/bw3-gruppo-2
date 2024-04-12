@@ -34,6 +34,14 @@
       </div>
     </div>
     <div class="link" *ngIf="user">
+      <div class="content" [routerLink]="['/game']" [routerLinkActive]="'active'">
+        <div class="icon">
+          <i class="bi bi-controller"></i>
+        </div>
+        <div class="title">Gioca</div>
+      </div>
+    </div>
+    <div class="link" *ngIf="user">
       <div class="content" [routerLink]="['/users']" [routerLinkActive]="'active'">
         <div class="icon">
           <i class="bi bi-people"></i>
