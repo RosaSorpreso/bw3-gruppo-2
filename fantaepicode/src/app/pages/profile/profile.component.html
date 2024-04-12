@@ -1,6 +1,9 @@
 <div class="container">
-  <h1 class="text-center text-white">Ciao {{user?.firstName}}!</h1>
-  <p *ngIf="squad.length !== 0" class="text-white text-center fs-5 mt-2">Ecco la tua squadra di Developers:</p>
+  <h1 class="text-center text-white">Ciao {{user?.firstName | titlecase}}!</h1>
+  <div class="d-flex justify-content-center align-items-center gap-3">
+    <p *ngIf="squad.length !== 0" class="text-white text-center fs-5 mt-2 mb-0">Ecco la tua squadra di Developers:</p>
+    <button *ngIf="squad.length === 4" routerLink="/game" class="btn btn-primary btn-sm border border-dark">Combatti</button>
+  </div>
   <p *ngIf="squad.length === 0" class="text-white text-center fs-5">Non hai nessuno in squadra, accattate qualcuno!</p>
 
   <div class="row">

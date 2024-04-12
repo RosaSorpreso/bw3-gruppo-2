@@ -45,6 +45,11 @@ const routes: Routes = [
     loadChildren: () => import('./backoffice/edit/edit.module').then(m => m.EditModule),
     title: 'Epicode Snap',
     canActivate: [AuthGuard]
+  },
+  { path: 'game',
+    loadChildren: () => import('./pages/game/game.module').then(m => m.GameModule),
+    title: 'Epicode Snap | Game',
+    canActivate: [AuthGuard]
   }
 ];
 
