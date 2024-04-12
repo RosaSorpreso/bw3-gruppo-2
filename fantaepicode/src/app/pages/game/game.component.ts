@@ -9,7 +9,8 @@ import { iPlayer } from '../../models/player';
 })
 export class GameComponent {
 
-  players:iPlayer[] =[]
+  players:iPlayer[] = []
+  players2:iPlayer[] = []
 
   constructor(private playerSvc: PlayersService,){}
   fight:boolean =false
@@ -18,7 +19,9 @@ export class GameComponent {
 
   ngOnInit() {
     this.playerSvc.getAllPlayers().subscribe(player => {
-      this.players = this.shuffle(player)
+      this.players = this.shuffle(player).splice(0, 4)
+      this.players2 = this.shuffle(player).splice(0, 4)
+
     });
 
     this.playerSvc.players$.subscribe(

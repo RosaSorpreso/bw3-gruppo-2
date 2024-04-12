@@ -5,8 +5,8 @@
 </div>
 
 <div class="row">
-  <div class="col-3" *ngFor="let p of players.splice(0, 4)">
-    <div class="nft animation-jump" [ngClass]="{'animation-sbam': 'fight'}">
+  <div class="col-3" *ngFor="let p of players, let i = index">
+    <div class="nft" id="'nft'+(i +1)" [ngClass]="{'animation-sbam' : fight, 'animation-jump': !fight}">
       <div class="main">
         <img
           class="tokenImage"
@@ -41,8 +41,8 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-3" *ngFor="let p of players.slice(0, 4)">
-    <div class="nft animation-jump">
+  <div class="col-3" *ngFor="let p of players2">
+    <div class="nft" [ngClass]="{'animation-sbam2': fight, 'animation-jump': !fight}">
       <div class="main">
         <img
           class="tokenImage"

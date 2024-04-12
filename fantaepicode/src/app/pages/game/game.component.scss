@@ -5,10 +5,28 @@
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-.animation-sbam{
+.animation-sbam>#nft1{
   animation-name: sbam;
   animation-duration: 1s;
   animation-timing-function: ease;
+}
+.animation-sbam>#nft2{
+  animation-name: sbam;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 2s;
+}
+.animation-sbam>#nft3{
+  animation-name: sbam;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 4s;
+}
+.animation-sbam>#nft4{
+  animation-name: sbam;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 6s;
 }
 .animation-sbam2{
   animation-name: sbam2;
