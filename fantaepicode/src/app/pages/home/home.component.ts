@@ -1,4 +1,4 @@
-import { iPlayer } from '../../models/player';
+import { iPlayer } from './../../models/player';
 import { PlayersService } from '../../players.service';
 import { Component } from '@angular/core';
 
@@ -8,19 +8,20 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
   players:iPlayer[] =[]
 
   constructor(private playerSvc: PlayersService,){}
 
   ngOnInit() {
     this.playerSvc.getAllPlayers().subscribe(player => {
-      this.players = player;
+      this.players = player.filter(player => player.strenght > 9.5)
     });
 
     this.playerSvc.players$.subscribe(
       player => {
         this.players = player;
       });
-  }
 
+  }
 }

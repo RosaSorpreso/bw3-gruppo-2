@@ -13,6 +13,7 @@ export class PlayersComponent {
 
   players: iPlayer[] = []
   user: iUser | undefined;
+  squad!: iPlayer[]
 
   filteredPlayers: iPlayer[] | undefined;
 
@@ -32,6 +33,10 @@ export class PlayersComponent {
       player => {
         this.players = player;
       });
+
+    this.playerSvc.favList.subscribe((favs:iPlayer[]) => {
+      this.squad = favs
+    })
 
     this.authSvc.user$.subscribe(user => {
       this.user = user || undefined;
@@ -84,6 +89,10 @@ export class PlayersComponent {
     }
 
     return array;
+  }
+
+  getSquad(){
+    return this.squad.length == 4
   }
 
 }
