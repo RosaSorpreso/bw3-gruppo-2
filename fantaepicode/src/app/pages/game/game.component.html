@@ -5,9 +5,9 @@
 </div>
 
 <div class="row">
-  <div class="col-3" *ngFor="let p of players, let i = index">
-    <div class="nft" id="'nft'+(i +1)" [ngClass]="{'animation-sbam' : fight, 'animation-jump': !fight}">
-      <div class="main">
+  <div class="col-3" *ngFor="let p of players, let i = index" >
+    <div class="nft" [ngClass]="getNftClasses(i)" >
+      <div class="main" >
         <img
           class="tokenImage"
           src="../../../assets/img/profile/{{ p.image }}"
@@ -41,8 +41,8 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-3" *ngFor="let p of players2">
-    <div class="nft" [ngClass]="{'animation-sbam2': fight, 'animation-jump': !fight}">
+  <div class="col-3" *ngFor="let p of players2, let i = index">
+    <div class="nft" [ngClass]="getNftClasses2(i)">
       <div class="main">
         <img
           class="tokenImage"
