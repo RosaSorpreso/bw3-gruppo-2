@@ -31,7 +31,7 @@ export class GameComponent {
       player => {
         this.players = player;
       });
-    this.playerSvc.favList.subscribe((favs: iPlayer[]) => {
+    this.playerSvc.favList.subscribe((favs) => {
       this.squad = favs
     })
     this.battleWin()
