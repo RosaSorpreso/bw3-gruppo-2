@@ -21,6 +21,13 @@
       "firstName": "cristiano",
       "lastName": "turri",
       "id": 3
+    },
+    {
+      "email": "a@b.it",
+      "password": "$2a$10$izf8AOT5U6xz1E.ahQgRXu49x/WuVSfTEOmjehwvplVfpmBHALZ0O",
+      "firstName": "cristiano",
+      "lastName": "turri",
+      "id": 4
     }
   ],
   "players": [
@@ -82,7 +89,7 @@
       "skills": [
         "sonno perenne",
         "debugger poco competente",
-        "ubriacatura facile"
+        "romantico"
       ],
       "price": "85",
       "role": "il valentinuzzi",
