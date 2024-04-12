@@ -318,6 +318,45 @@
       "role": "pixar",
       "strenght": 6,
       "image": "pixar.png"
+    },
+    {
+      "id": 21,
+      "firstName": "wikele",
+      "skills": [
+        "ti manda i colleghi col passamontagna sotto casa",
+        "attiva iperfocus",
+        "lancia loop infiniti"
+      ],
+      "price": "666",
+      "role": "l'anti michele",
+      "strenght": 2000,
+      "image": "wikele.jpeg"
+    },
+    {
+      "id": 22,
+      "firstName": "remo",
+      "skills": [
+        "sa capovolgere la web",
+        "qualità audio: scarsa",
+        "ha style"
+      ],
+      "price": "50",
+      "role": "il boliviano",
+      "strenght": 6,
+      "image": "remo.jpeg"
+    },
+    {
+      "id": 23,
+      "firstName": "diego",
+      "skills": [
+        "sa dormire in qualunque posizione",
+        "fa peti puzzolenti",
+        "rutta come un uomo"
+      ],
+      "price": "100",
+      "role": "il cane di rosa",
+      "strenght": 8.5,
+      "image": "diego.jpeg"
     }
   ]
 }
